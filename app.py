@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('To-do App')
+st.title('✅To-do App✅')
 
 # (할일 + 여부) 객체로 관리하기 위해 만든 클래스
 # 클래스가 아니라 딕셔너리로 만들 수도 있지만, 타입으로 만들어서 관리하는게 더 좋음.
