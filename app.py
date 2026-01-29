@@ -65,3 +65,16 @@ if st.session_state['todos']:
         col2.markdown(f'~~{todo.get_task()}~~' if todo.get_done() else todo.get_task())
 else:
     st.info('할일을 추가해 보세요.')
+
+# pip list하면 현재 가상환경(pystudy_env)에 있는 도구들(패키지들)을 알 수 있음
+# streamlit에 배포하기 위해 github에 올릴 때는 requirements.txt로 만들어서 push해 줘야함
+# pip list --format=freeze > requirements.txt
+
+# streamlit에서 충돌 발생하면 LLM활용해서 해당 라이브러리 적합한 버전으로 수정 및 삭제하면 배포가능
+# requirements.txt에서 'win'으로 검색해서 세가지 삭제하기
+# 1. pywin32==311
+# 2. pywinpty==2.0.15
+# 3. win_inet_pton==1.1.0
+
+# mac은 아마도 pyodbc랑 unixodbc 이 두개를 지워야 할 듯
+
